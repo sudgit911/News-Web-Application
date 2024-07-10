@@ -14,10 +14,6 @@ A web application built with Flask that aggregates news articles from NewsAPI an
 - **Responsive Design**: Built with Bootstrap for a responsive and mobile-friendly layout.
 - **Hover Effects**: Enhances user interaction with hover effects on news cards.
 
-## Demo
-
-![Demo](images/web.png) 
-
 ## Installation
 
 To run this project locally, follow these steps:

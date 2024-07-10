@@ -24,7 +24,7 @@ To run this project locally, follow these steps:
    git clone https://github.com/yourusername/news-aggregator.git
    cd news-aggregator
 
-##Usage
+## Usage
 
 Navigate through different pages of news articles using the pagination buttons.
 Click on the topic badges to filter news articles by specific topics.
@@ -44,11 +44,11 @@ Commit your changes (git commit -am 'Add new feature').
 Push to the branch (git push origin feature/your-feature).
 Create a new Pull Request.
 
-##License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-##Acknowledgements
+## Acknowledgements
 
 Thanks to NewsAPI for providing access to news articles.
 Special thanks to OpenAI for providing ChatGPT, which assisted in development.

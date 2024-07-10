@@ -1,8 +1,5 @@
 # News Aggregator Web App
 
-![News Aggregator](![image](https://github.com/sudgit911/News-Web-Application/assets/142622457/84c461c3-e7cb-4a72-86b1-9fc1c29d2fe2)
-.png)
-
 A web application built with Flask that aggregates news articles from NewsAPI and displays them in a user-friendly interface. Users can browse through the latest news, filter by topics, and navigate using pagination.
 
 ## Features

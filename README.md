@@ -26,23 +26,24 @@ To run this project locally, follow these steps:
 
 ## Usage
 
-Navigate through different pages of news articles using the pagination buttons.
-Click on the topic badges to filter news articles by specific topics.
-Hover over news cards to see hover effects and read a brief summary of each article.
-Technologies Used
-Flask: Python web framework for building the backend server.
-Bootstrap: Frontend framework for responsive design and styling.
-NewsAPI: External API for fetching news articles.
-Jinja2: Templating engine for rendering HTML templates with Flask.
-Contributing
+- Navigate through different pages of news articles using the pagination buttons.
+- Click on the topic badges to filter news articles by specific topics.
+- Hover over news cards to see hover effects and read a brief summary of each article.
+- Technologies Used
+-- Flask: Python web framework for building the backend server.
+-- Bootstrap: Frontend framework for responsive design and styling.
+-- NewsAPI: External API for fetching news articles.
+-- Jinja2: Templating engine for rendering HTML templates with Flask.
+
+## Contributing
 Contributions are welcome! Please follow these steps to contribute:
 
-Fork the repository.
-Create a new branch (git checkout -b feature/your-feature).
-Make your changes.
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature/your-feature).
-Create a new Pull Request.
+- Fork the repository.
+- Create a new branch (git checkout -b feature/your-feature).
+- Make your changes.
+- Commit your changes (git commit -am 'Add new feature').
+- Push to the branch (git push origin feature/your-feature).
+- Create a new Pull Request.
 
 ## License
 

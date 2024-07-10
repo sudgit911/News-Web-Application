@@ -12,7 +12,7 @@ A web application built with Flask that aggregates news articles from NewsAPI an
 
 ## Demo
 
-![Demo](demo.gif)
+![Demo](web screenshot.png)
 
 ## Installation
 

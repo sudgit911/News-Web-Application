@@ -2,6 +2,10 @@
 
 A web application built with Flask that aggregates news articles from NewsAPI and displays them in a user-friendly interface. Users can browse through the latest news, filter by topics, and navigate using pagination.
 
+## Demo
+
+![Demo](images/web.png) 
+![Demo](images/web2.png) 
 ## Features
 
 - **Top Headlines**: Fetches and displays the latest top headlines from various news sources.

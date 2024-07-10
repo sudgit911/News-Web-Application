@@ -1,0 +1,29 @@
+body {
+    background-color: #c9e2ff; /* Replace with your desired background color */
+    color: #333;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.news-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(56, 55, 59, 0.2);
+}
+
+.pagination-wrapper {
+    text-align: center;
+}
+
+.pagination-wrapper .btn {
+    margin: 0 5px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News On the Go</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="mb-4 title">NEWS ON THE GO</h1>
+        </div>
+        
+        <!-- Bootstrap badges for topics -->
+        <div class="mb-3 text-center">
+            <a href="{{ url_for('home', topic='technology') }}" class="badge badge-primary">Technology</a>
+            <a href="{{ url_for('home', topic='business') }}" class="badge badge-secondary">Business</a>
+            <a href="{{ url_for('home', topic='entertainment') }}" class="badge badge-primary">Entertainment</a>
+            <a href="{{ url_for('home', topic='science') }}" class="badge badge-secondary">Science</a>
+            <a href="{{ url_for('home', topic='health') }}" class="badge badge-primary">Health</a>
+        </div>
+
+        <!-- Main articles container -->
+        <div class="row">
+            {% for article in articles %}
+                <div class="col-md-6 mb-4">
+                    <div class="card news-card">
+                        <img src="{{ article.image }}" class="card-img-top" alt="{{ article.title }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ article.title }}</h5>
+                            <p class="card-text">{{ article.content }}...</p>
+                            <a href="{{ article.link }}" class="btn btn-secondary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <!-- Pagination at the bottom -->
+        <div class="pagination-wrapper mt-3 text-center">
+            <div>
+                {% if page > 1 %}
+                    <a href="{{ url_for('home', page=page-1, topic=topic) }}" class="btn btn-primary btn-sm mx-2">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </a>
+                {% endif %}
+                {% if articles | length == 4 %}
+                    <a href="{{ url_for('home', page=page+1, topic=topic) }}" class="btn btn-primary btn-sm mx-2">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </a>
+                {% endif %}
+            </div>
+            <div class="mt-2">
+                <span>Page {{ page }} of {{ total_pages }}</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

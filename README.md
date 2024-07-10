@@ -30,10 +30,10 @@ To run this project locally, follow these steps:
 - Click on the topic badges to filter news articles by specific topics.
 - Hover over news cards to see hover effects and read a brief summary of each article.
 - Technologies Used:
-1. **Flask**: Python web framework for building the backend server.
-2. **Bootstrap**: Frontend framework for responsive design and styling.
-3. **NewsAPI**: External API for fetching news articles.
-4. **Jinja2**: Templating engine for rendering HTML templates with Flask.
+   1. **Flask**: Python web framework for building the backend server.
+   2. **Bootstrap**: Frontend framework for responsive design and styling.
+   3. **NewsAPI**: External API for fetching news articles.
+   4. **Jinja2**: Templating engine for rendering HTML templates with Flask.
 
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:
